@@ -18,10 +18,28 @@ class Car {
         return doors1 + doors2;
     }
 }
+
+//created a class that inherits from parent class Car and added new default parameters
+class SUV extends Car {
+    constructor(doors, engine, color, brand, carStats) {
+        super(doors, engine, color, carStats);
+        this.brand = brand;
+        this.wheels = 4;
+        this.ac = true;
+    }
+    
+    myBrand() {
+        return console.log(`This SUV is a ${this.brand}`);
+    }
+
+}
 // an instance of class that is defining the parameters of that class!
-const cx5 = new Car(4, 'V6', 'grey');
+const cx5 = new SUV(4, 'V6', 'grey', 'mazda');
 const civic = new Car(3, 'v4', 'blue');
 
 console.log(cx5);
-console.log(cx5.carStats());
-console.log(Car.totalDoors(cx5, civic));
+console.log(cx5.myBrand());
+// console.log(cx5.carStats());
+// console.log(civic);
+// console.log(civic.carStats());
+// console.log(Car.totalDoors(cx5, civic));
