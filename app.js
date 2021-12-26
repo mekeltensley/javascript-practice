@@ -4,12 +4,12 @@ class Car {
         this.engine = engine;
         this.color = color;
     }
-
+// a class method 
     carStats() {
         return `This car has ${this.doors} doors, a ${this.engine} engine and a beautiful ${this.color} color!`;
     }
 }
-
+// an instance of class that is defining the parameters of that class!
 const cx5 = new Car(4, 'V6', 'grey');
 
 console.log(cx5);
