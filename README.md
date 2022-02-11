@@ -1,1 +1,1 @@
-# `Practice JavaScript classes`
+# `Practice JavaScript`
